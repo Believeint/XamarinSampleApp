@@ -13,7 +13,8 @@ namespace MyApp1
 
             //MainPage = new BindingExamplePage();
             //MainPage = new CommandsExamplePage();
-            MainPage = new CommandsParameterExamplePage();
+            //MainPage = new CommandsParameterExamplePage();
+            MainPage = new BindingInViewPage();
         }
 
         protected override void OnStart()
