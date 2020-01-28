@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:local="clr-namespace:MyApp1"
              x:Class="MyApp1.MainPage"
              ControlTemplate="{StaticResource MyTemplate}">
 
@@ -23,6 +24,7 @@
            VerticalOptions="CenterAndExpand" Style="{StaticResource labelStyle}" />
         <Entry Placeholder="Entry" VerticalOptions="CenterAndExpand" IsPassword="True" ReturnType="Search" MaxLength="4" IsReadOnly="True" Keyboard="Numeric"/>
         <Editor Placeholder="Editor" PlaceholderColor="Purple" VerticalOptions="CenterAndExpand" AutoSize="TextChanges"/>
+        <Image Source="{local:ImageResource Source=MyApp1.images.edit.png}"/>
     </StackLayout>
 
 </ContentPage>
