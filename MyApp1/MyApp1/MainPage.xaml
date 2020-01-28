@@ -6,11 +6,20 @@
              mc:Ignorable="d"
              x:Class="MyApp1.MainPage">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="labelStyle">
+                <Setter Property="TextColor" Value="Fuchsia"/>
+                <Setter Property="FontSize" Value="32"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <StackLayout>
         <!-- Place new controls here -->
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="CenterAndExpand" Style="{StaticResource labelStyle}" />
     </StackLayout>
 
 </ContentPage>
