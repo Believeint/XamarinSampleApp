@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace MyApp1.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)] 
     public partial class CommandsExamplePage : ContentPage
     {
         public CommandsExamplePage()

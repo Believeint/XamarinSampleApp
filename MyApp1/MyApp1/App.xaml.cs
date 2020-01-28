@@ -12,7 +12,8 @@ namespace MyApp1
             InitializeComponent();
 
             //MainPage = new BindingExamplePage();
-            MainPage = new CommandsExamplePage();
+            //MainPage = new CommandsExamplePage();
+            MainPage = new CommandsParameterExamplePage();
         }
 
         protected override void OnStart()
