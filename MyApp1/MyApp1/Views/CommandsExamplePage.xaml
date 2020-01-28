@@ -13,7 +13,7 @@
     
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <Button Text="Increase Count" BackgroundColor="{OnPlatform Android=DodgerBlue, iOS=Red}" Command="{Binding Path=IncreaseCommand}"/>
+            <Button Text="Increase Count" FontSize="{OnIdiom Phone=Medium, Tablet=72}" BackgroundColor="{OnPlatform Android=DodgerBlue, iOS=Red}" Command="{Binding Path=IncreaseCommand}"/>
             <Label Text="{Binding Path=DisplayCount}"/>
         </StackLayout>
     </ContentPage.Content>
