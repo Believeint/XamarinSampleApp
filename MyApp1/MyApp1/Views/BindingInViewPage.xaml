@@ -10,12 +10,12 @@
     <ContentPage.BindingContext>
         <local:BindingInViewViewModel/>
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Content>
-        <StackLayout Padding="20">
+        <StackLayout Padding="20" BackgroundColor="{StaticResource MainColor}">
             <Entry x:Name="entryCount" Placeholder="Enter Count Increment"/>
-            <Label BindingContext="{x:Reference entryCount}" Text="{Binding Path=Text}"/>
-            <Button Command="{Binding IncreaseCommand}" CommandParameter="{Binding Source={x:Reference entryCount}, Path=Text}" Text="Increase Count"/>
+            <Label Style="{StaticResource LabelPageHeadingStyle}" BindingContext="{x:Reference entryCount}" Text="{Binding Path=Text}"/>
+            <Button BackgroundColor="{StaticResource SecondaryColor}" Command="{Binding IncreaseCommand}" CommandParameter="{Binding Source={x:Reference entryCount}, Path=Text}" Text="Increase Count"/>
             <Label Text="{Binding Path=DisplayCount}"/>
         </StackLayout>
     </ContentPage.Content>
