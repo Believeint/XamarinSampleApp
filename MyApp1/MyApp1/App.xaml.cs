@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using MyApp1.Views;
 
+[assembly:XamlCompilation(XamlCompilationOptions.Compile)]
 namespace MyApp1
 {
     public partial class App : Application

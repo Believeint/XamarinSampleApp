@@ -20,6 +20,8 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" Style="{StaticResource labelStyle}" />
+        <Entry Placeholder="Entry" VerticalOptions="CenterAndExpand" IsPassword="True" ReturnType="Search" MaxLength="4" IsReadOnly="True" Keyboard="Numeric"/>
+        <Editor Placeholder="Editor" PlaceholderColor="Purple" VerticalOptions="CenterAndExpand" AutoSize="TextChanges"/>
     </StackLayout>
 
 </ContentPage>
