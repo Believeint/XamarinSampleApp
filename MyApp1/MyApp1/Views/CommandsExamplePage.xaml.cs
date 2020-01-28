@@ -16,5 +16,7 @@ namespace MyApp1.Views
         {
             InitializeComponent();
         }
+
+       
     }
 }

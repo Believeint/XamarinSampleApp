@@ -13,8 +13,8 @@
     
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <Button Text="Increase Count" x:Name="ButtonCount"/>
-            <Label Text="{Binding}"/>
+            <Button Text="Increase Count" Command="{Binding Path=IncreaseCommand}"/>
+            <Label Text="{Binding Path=DisplayCount}"/>
         </StackLayout>
     </ContentPage.Content>
     
