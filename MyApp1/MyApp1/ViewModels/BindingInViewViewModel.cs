@@ -16,6 +16,8 @@ namespace MyApp1.ViewModels
 
         private void IncreaseCount(string obj)
         {
+            App.Current.Resources["MainColor"] = Color.AntiqueWhite;
+            App.Current.Resources["SecondaryColor"] = Color.RoyalBlue;
             if(int.TryParse(obj, out int result))
             {
                 count += result;
