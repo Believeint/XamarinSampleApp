@@ -12,12 +12,14 @@
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
+
+        <!--#region My MainStackLayout-->
         <StackLayout>
-        <StackLayout Padding="20">
-            <Button Command="{Binding Path=IncreaseCommand}" CommandParameter="2" Text="Increase Count"/>
-            <Label Text="{Binding Path=DisplayCount}" d:Text="Data Binding in Design Mode Example"/>
-        </StackLayout>
-        <ListView>
+            <StackLayout Padding="20">
+                <Button Command="{Binding Path=IncreaseCommand}" CommandParameter="2" Text="Increase Count"/>
+                <Label Text="{Binding Path=DisplayCount}" d:Text="Data Binding in Design Mode Example"/>
+            </StackLayout>
+            <ListView>
                 <d:ListView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>First Item</x:String>
@@ -31,7 +33,9 @@
                         <TextCell Text="{Binding .}" Detail="{Binding .}"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-        </ListView>
+            </ListView>
         </StackLayout>
+        <!--#endregion-->
+
     </ContentPage.Content>
 </ContentPage>
