@@ -16,6 +16,14 @@
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="TextColor" Value="{StaticResource HeadingTextColor}"/>
             </Style>
+            <ControlTemplate x:Key="MyTemplate">
+                <StackLayout>
+                    <Label Text="Header" BackgroundColor="Purple" TextColor="White" VerticalOptions="Start"/>
+                    <ContentPresenter VerticalOptions="FillAndExpand"/>
+                    <Label Text="Footer" BackgroundColor="Purple" TextColor="White" VerticalOptions="End"/>
+                </StackLayout>
+            </ControlTemplate>
         </ResourceDictionary>
+        
     </Application.Resources>
 </Application>

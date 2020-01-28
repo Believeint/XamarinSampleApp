@@ -3,7 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using MyApp1.Views;
 
-[assembly:XamlCompilation(XamlCompilationOptions.Compile)]
+
 namespace MyApp1
 {
     public partial class App : Application
@@ -15,7 +15,8 @@ namespace MyApp1
             //MainPage = new BindingExamplePage();
             //MainPage = new CommandsExamplePage();
             //MainPage = new CommandsParameterExamplePage();
-            MainPage = new BindingInViewPage();
+            //MainPage = new BindingInViewPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
